@@ -322,9 +322,10 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
 #experience {
   position: relative;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 .experience-sub-title {
@@ -342,9 +343,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
@@ -358,6 +357,27 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* ICONS */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Hover effect on icons */
 }
 
 /* PROJECTS SECTION */
