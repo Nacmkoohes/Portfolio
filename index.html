@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasim Koohestani - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Nasim Koohestani</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hamburger Menu for Mobile -->
+  <nav id="hamburger-nav">
+    <div class="logo">Nasim Koohestani</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+<!-- Profile Section -->
+<section id="profile">
+
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Nasim Koohestani</h1>
+    <p class="section__text__p2">Software Developer</p>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+      <a class="btn btn-color-2" href="./assets/NasimKoohestani_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn btn-color-1" href="#contact">Contact Info</a>
+    </div>
+
+
+    <!-- Social Media Links -->
+    <div id="socials-container">
+      <a href="https://linkedin.com/in/nasimkoohestani" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+      </a>
+      <a href="https://github.com/Nacmkoohes" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="./assets/github.png" alt="GitHub" class="icon" />
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- About Section -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+
+  <div class="section-container">
+
+    <!-- About Details -->
+    <div class="about-details-container">
+      <div class="about-containers">
+        <!-- Experience -->
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>Teaching Assistant, Data Structures at <strong>Amirkabir University of Technology</strong><br />Spring 2024</p>
+        </div>
+
+        <!-- Education -->
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>B.Sc. in Computer Science, <strong>Amirkabir University of Technology</strong><br />Sept 2022 – Present</p>
+        </div>
+      </div>
+
+      <!-- About Text -->
+      <div class="text-container">
+        <p>
+          I am a passionate <strong>Software Developer</strong> with hands-on experience in Frontend Development and Systems Programming. Currently, I’m pursuing my B.Sc. in Computer Science at Amirkabir University of Technology (AUT).
+        </p>
+        <p>
+          I have worked on a range of projects involving Python, C, C++, Golang. Some of my projects include building a peer-to-peer chat system, a student portal, and a custom HTTP server. 
+        </p>
+        <p>
+          I have a strong foundation in computer networks, distributed systems, and algorithmic problem-solving. Additionally, I have a passion for teaching and mentoring, having assisted peers in Data Structures and Algorithms.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow to Experience Section -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
+</section>
+<!-- Experience Section -->
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+
+  <div class="experience-details-container">
+    <!-- Frontend Development Skills -->
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="HTML icon" class="icon" />
+            <div>
+              <h3>HTML</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS icon" class="icon" />
+            <div>
+              <h3>CSS</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/721/721671.png" alt="JavaScript icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/3393/3393920.png" alt="React icon" class="icon" />
+            <div>
+              <h3>React</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Backend Development Skills with Icons -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Languages</h2>
+        <div class="article-container">
+          <article>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C icon" class="icon" />
+            <div>
+              <h3>C</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++ icon" class="icon" />
+            <div>
+              <h3>C++</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Golang icon" class="icon" />
+            <div>
+              <h3>Golang</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Systems and CS Concepts with Icons -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Systems & Networking Concepts</h2>
+        <div class="article-container">
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/17001/17001048.png" alt="TCP/IP icon" class="icon" />
+            <div>
+              <h3>TCP/IP</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/1880/1880061.png" alt="HTTP icon" class="icon" />
+            <div>
+              <h3>HTTP</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/9552/9552472.png" alt="Operating Systems icon" class="icon" />
+            <div>
+              <h3>Operating Systems</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://cdn-icons-png.flaticon.com/128/4199/4199937.png" alt="Distributed Systems icon" class="icon" />
+            <div>
+              <h3>Distributed Systems</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow to Projects Section -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="experience-details-container">
+    <div class="about-containers">
+    <!-- Project A -->
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./assets/project_p2p_chat.png" alt="P2P Chat (STUN)" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Project A — P2P Chat</h2>
+      <p class="project-desc">
+        Python peer-to-peer chat using STUN for NAT traversal. Direct TCP messaging
+        with simple file send and a minimal discovery API.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Nacmkoohes/python-p2p-chat-stun.git','_blank','noopener')">
+          Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project B -->
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./assets/project_2048_clean.png" alt="2048 Game" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">2048 Game</h2>
+      <p class="project-desc">
+        Classic 2048 built in Python. Clear merge logic, score tracking, and a clean
+        UI cover for the project card.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Nacmkoohes/2048-python.git','_blank','noopener')">
+          Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project C -->
+    <div class="details-container color-container">
+      <div class="article-container">
+        <img src="./assets/project_http_server.png" alt="HTTP Server" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Project C — HTTP Server</h2>
+      <p class="project-desc">
+        Educational HTTP/1.1 server in Python using sockets. Multithreaded request
+        handling and a tiny client for testing.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Nacmkoohes/python-webserver-client.git','_blank','noopener')">
+          Github
+        </button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Go to Contact section" class="icon arrow"
+       onclick="location.href='./#contact'" />
+</section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nasimkoohestani82@gmail.com">Contact via Mail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/nasimkoohestani">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Nasim Koohestani. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

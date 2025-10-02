@@ -1,0 +1,19 @@
+/* For smaller screens */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  .btn-container {
+    flex-direction: column;
+  }
+}
