@@ -452,6 +452,20 @@ article .icon {
 #projects .project-btn {
   min-width: 120px;
 }
+/* Projects: descriptions */
+#projects .project-desc {
+  font-size: 0.98rem;
+  color: rgb(85, 85, 85);
+  line-height: 1.5;
+  text-align: center;
+  margin: .25rem 0 .5rem;
+  /* keep cards equal height by clamping lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;     /* show up to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3.6rem;        /* reserve space ~3 lines */
+}
 
 /* CONTACT */
 
