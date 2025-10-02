@@ -253,9 +253,10 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
 .about-containers {
@@ -265,6 +266,7 @@ section {
 }
 
 .about-details-container {
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -276,12 +278,15 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  width: 100%;
+  max-width: 400px;
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  cursor: pointer;
 }
 
 .details-container {
@@ -303,6 +308,17 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/* ICONS */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slight hover effect for icons */
 }
 
 /* EXPERIENCE SECTION */
