@@ -17,6 +17,26 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+:root{
+  /* Palette — techy & feminine */
+  --bg-0:#231b24;        /* deep plum */
+  --bg-1:hsl(300, 43%, 86%);        /* surface */
+  --card:#000000;        /* cards */
+  --text:#f6f4ff;
+  --muted:#000000;
+  --accent:#c084fc;      /* lavender */
+  --accent-2:#000000;    /* sky cyan */
+  --accent-3:#f472b6;    /* pink pop */
+
+  --radius-lg:22px;
+  --radius:14px;
+  --shadow:0 12px 40px rgba(0,0,0,.35);
+}
+
+/* Base */
+body{ background:linear-gradient(180deg,var(--bg-0),var(--bg-1)); color:var(--text); }
+a{ color:var(--accent-2); }
+
 /* TRANSITION */
 a,
 .btn{
@@ -49,10 +69,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(0, 0, 0);
 }
 
 .logo {
@@ -244,13 +264,79 @@ section {
 
 .btn-color-2 {
   background: none;
-  border: 1px solid #333;
+  border: 1px solid #000000;
   color: black;
 }
 
 .btn-color-2:hover {
-  background-color: #f0f0f0;
+  background-color: #000000;
 }
+/* Card surfaces */
+.details-container.color-container{
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(192,132,252,.25); /* lavender */
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+/* Section headings */
+.title{
+  font-weight: 800;
+  letter-spacing: .2px;
+  background: linear-gradient(90deg,var(--accent),var(--accent-2),var(--accent-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.section__text__p1, .section__text__p2, .project-desc{ color: var(--muted); }
+
+/* Nav */
+#desktop-nav, #hamburger-nav{
+  background: rgba(15,11,26,0.35);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(192,132,252,.18);
+}
+.nav-links a:hover{ color: var(--accent); text-decoration-color: var(--accent); }
+.logo{ color: var(--text); font-weight: 700; }
+
+/* Buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  border-radius: var(--radius);
+  border: 1px solid rgba(192,132,252,.35);
+  box-shadow: var(--shadow);
+}
+.btn-color-1{
+  background: linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#0b0b12; border: none;
+}
+.btn-color-1:hover{ filter: brightness(1.05); }
+.btn-color-2{
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+.btn-color-2:hover{ background: rgba(255,255,255,0.12); }
+
+/* Icons */
+.icon{ filter: drop-shadow(0 4px 12px rgba(192,132,252,.25)); }
+
+/* Profile hero */
+#profile{
+  position:relative;
+}
+#profile::before{
+  content:"";
+  position:absolute; inset:-80px -40px auto -40px; height:320px;
+  background: radial-gradient(600px 220px at 50% 40%, rgba(192,132,252,.25), transparent 60%),
+              radial-gradient(400px 180px at 20% 10%, rgba(125,211,252,.18), transparent 60%),
+              radial-gradient(340px 140px at 80% 10%, rgba(244,114,182,.15), transparent 60%);
+  pointer-events:none; z-index:-1;
+}
+
+/* Projects grid tweaks (builds on what you have) */
+#projects .project-title{ color: var(--text); }
+#projects .project-btn{ color: var(--text); border-color: rgba(192,132,252,.35); }
 
 /* ABOUT SECTION */
 #about {
@@ -361,10 +447,10 @@ article .icon {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: rgb(144, 143, 143);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(0, 0, 0) 0.1rem solid;
+  border-color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -395,7 +481,7 @@ article .icon {
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(0, 0, 0);
 }
 #projects .about-containers {
   display: grid;
@@ -446,7 +532,7 @@ article .icon {
 /* Projects: descriptions */
 #projects .project-desc {
   font-size: 0.98rem;
-  color: rgb(85, 85, 85);
+  color: rgb(32, 31, 31);
   line-height: 1.5;
   text-align: center;
   margin: .25rem 0 .5rem;
@@ -472,7 +558,7 @@ article .icon {
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(0, 0, 0);
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
